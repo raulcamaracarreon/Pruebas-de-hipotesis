@@ -6,7 +6,7 @@ def test_de_Wilcoxon_de_medianas_para_una_muestra():
     st.title("Test de Wilcoxon de medianas para una muestra")
 
     # Obtener los datos de la muestra del usuario
-    data = st.text_input("Ingresa los datos de la muestra, separados por comas (ej. 1,2,3): ")
+    data = st.text_input("Ingresa los datos de la muestra, separados por comas (ej. 1,2,3): ", value="1,2,3")
 
     # Convertir los datos a una lista de números
     data = [float(x) for x in data.split(",")]
