@@ -5,7 +5,7 @@ def prueba_T_de_Student_para_una_muestra():
     st.title("Prueba t de Student para una muestra")
 
     # Obtener los datos de la muestra del usuario
-    data = st.text_input("Ingresa los datos de la muestra, separados por comas (ej. 1,2,3): ")
+    data = st.text_input("Ingresa los datos de la muestra, separados por comas (ej. 1,2,3): ", value="1,2,3")
 
     # Convertir los datos a una lista de números
     data = [float(x) for x in data.split(",")]
