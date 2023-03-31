@@ -6,10 +6,10 @@ def prueba_T_de_Student_para_dos_medias():
 
     while True:
         # Obtener las medias y bases de muestra del usuario
-        mean1 = st.number_input("Ingresa la media del primer grupo:", value=0.0, step=0.01, key="mean1")
-        n1 = st.number_input("Ingresa la base de muestra del primer grupo:", value=1, step=1, key="n1")
-        mean2 = st.number_input("Ingresa la media del segundo grupo:", value=0.0, step=0.01, key="mean2")
-        n2 = st.number_input("Ingresa la base de muestra del segundo grupo:", value=1, step=1, key="n2")
+        mean1 = st.number_input("Ingresa la media del primer grupo:", value=1.0, step=0.01, key="mean1")
+        n1 = st.number_input("Ingresa la base de muestra del primer grupo:", value=10, step=1, key="n1")
+        mean2 = st.number_input("Ingresa la media del segundo grupo:", value=1.0, step=0.01, key="mean2")
+        n2 = st.number_input("Ingresa la base de muestra del segundo grupo:", value=10, step=1, key="n2")
 
         # Calcular el valor-p utilizando la prueba t de Student
         # Se asume varianzas iguales y una distribución normal de las muestras
