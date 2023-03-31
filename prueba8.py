@@ -6,7 +6,7 @@ def prueba_chi_cuadrado():
     st.title("Prueba Chi-cuadrado")
 
     # Obtener los datos de la tabla de contingencia del usuario
-    data = st.text_input("Ingresa los datos de la tabla de contingencia, separados por comas (ej. 5,10,15;20,25,30): ", value="5,10,15;20,25,30")
+    data = st.text_input("Ingresa los datos de la tabla de contingencia, -los datos de cada grupo separados por comas y los grupos separados por 'punto y coma'- (ej. 5, 10, 15; 20, 25, 30): ", value="5, 10, 15; 20, 25, 30")
 
     # Convertir los datos a una lista de listas de números
     data = [[int(x) for x in row.split(",")] for row in data.split(";")]
