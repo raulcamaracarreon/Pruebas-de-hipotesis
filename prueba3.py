@@ -10,10 +10,11 @@ def prueba_U_de_Mann_Whitney():
 
     while True:
         # Obtener porcentajes y bases de muestra del usuario
-        p1 = st.number_input("Ingresa el primer porcentaje (ej. 0.60): ", min_value=0.0, max_value=1.0, step=0.0001, key='p1')
+        p1 = st.number_input("Ingresa el primer porcentaje (ej. 0.60): ", min_value=0.0, max_value=1.0, step=0.001, format="%.3f", key='p1')
         n1 = st.number_input("Ingresa la base de muestra del primer porcentaje (ej. 100): ", min_value=1, step=1, key='n1')
-        p2 = st.number_input("Ingresa el segundo porcentaje (ej. 0.70): ", min_value=0.0, max_value=1.0, step=0.0001, key='p2')
+        p2 = st.number_input("Ingresa el segundo porcentaje (ej. 0.70): ", min_value=0.0, max_value=1.0, step=0.001, format="%.3f", key='p2')
         n2 = st.number_input("Ingresa la base de muestra del segundo porcentaje (ej. 100): ", min_value=1, step=1, key='n2')
+
 
 
         # Generar las listas con las proporciones de éxito
